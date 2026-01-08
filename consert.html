@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Concert Era's</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===== HEADINGS ===== */
+
+h1 {
+  color:black;
+  font-family: 'Allura', cursive;
+  font-size: 50px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #4a4a4a;
+  background-image: url('gambar/Star !.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #ffe4e1;
+  padding: 15px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.consert-header {
+  text-align: center;
+  padding: 20px 20px;
+  background: rgba(255,182,193,0.85); /* light transparent pink */
+  color: white;
+  border-radius: 0 0 30px 30px;
+  margin-top: 10px;
+}
+
+.consert-header h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-family: 'Allura', cursive;
+}
+
+.consert-header p {
+  font-size: 16px;
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+}
+/* ===== MUSIC PLAYER ===== */
+.music-player audio {
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: hotpink;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18 px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+/* ===== CONCERT GRID ===== */
+.concert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.concert-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.concert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  background: rgba(255,228,241,0.95);
+}
+
+.concert-card video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.concert-card h3 {
+  margin: 12px 0 6px 0;
+  font-size: 20px;
+  color: hotpink;
+}
+
+.concert-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+  margin: 5px 10px;
+  text-align: justify;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #ffe4e1;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-footer a img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+footer .social-footer a img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .concert-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .concert-card video {
+    height: auto;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>🌸 Welcome to My Website 🌸</h1>
+
+  <!-- Audio player -->
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="audio/sempurna.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+     <a href="homes.html">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="work_exprience.html">Experience</a>
+    <a href="consert.html">Concert</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="my_song.html">Song</a>
+  </nav>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  <h1>🎵 My Concert Era's</h1>
+
+  <section class="concert-grid">
+
+    <!-- Concert 1 -->
+    <div class="concert-card">
+      <video controls aria-label="Feby Putri Concert Video">
+        <source src="video/WhatsApp Video 2026-01-03 at 10.13.09 PM.mp4" type="video/mp4">
+      </video>
+      <h3>FEBY PUTRI</h3>
+      <p>My concert experience was unforgettable and meaningful. Attending Feby Putri’s concert felt like stepping into a different world filled with emotions and beautiful melodies.</p>
+    </div>
+
+    <!-- Concert 2 -->
+    <div class="concert-card">
+      <video controls aria-label="Rizky Febian Concert Video">
+        <source src="video/IMG_0797.MOV" type="video/mp4">
+      </video>
+      <h3>RIZKY FEBIAN</h3>
+      <p>The concert was fun from the beginning until the end, and I did not feel bored at all. I felt that it was worth attending, and I might go to his concert again in the future.</p>
+    </div>
+
+    <!-- Concert 3 -->
+    <div class="concert-card">
+      <video controls aria-label="Rapid Concert Video">
+        <source src="video/WhatsApp Video 2026-01-04 at 12.07.36 AM.mp4" type="video/mp4">
+      </video>
+      <h3>RAPID</h3>
+      <p>Next is the Rapid Concert, which I also attended twice: Rapid 1.0 and Rapid 2.0. There were clear differences between the two. Most artists were new and not well-known to me, but the performance was lively and entertaining.</p>
+    </div>
+
+    <!-- Concert 4 -->
+    <div class="concert-card">
+      <video controls aria-label="Jiwa Kacau Concert Video">
+        <source src="video/IMG_0795.MOV" type="video/mp4">
+      </video>
+      <h3>JIWA KACAU</h3>
+      <p>My experience attending Jiwa Kacau Concert 1.0 and 2.0 was very enjoyable. Both concerts were fun and exciting, with amazing artists performing.</p>
+    </div>
+
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 | Designed by <span style="color:black;">Farah Batrisyia</span> 🤍</p>
+  <div class="social-footer">
+    <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+      <img src="gambar/tiktok.jpg" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+      <img src="gambar/insta.jpg" alt="Instagram">
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&to=frhbtrisya27@gmail.com&su=Hello%20Farah&body=Hi%20Farah" target="_blank" title="Email">
+      <img src="gambar/email.jpg" alt="Email">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

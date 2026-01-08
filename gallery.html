@@ -1,0 +1,261 @@
+
+<html >
+<head>
+<title>My Gallery</title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+<style>
+h1 {
+  font-family: 'Allura', cursive;  color: black;  font-size: 50px;  margin: 10px 0;
+}
+
+body {
+  margin: 0; font-family: 'Playfair Display', serif;  background: #fdfaf6;  color: #4a4a4a;
+  background-image: url('gambar/laptop\ wallpaper\ _\ youtube\ banner\ !!.jpg');
+  background-size: cover;  background-position: center;  background-attachment: fixed;
+}
+
+header  {
+  background: #ffe4e1;  padding: 15px;  text-align: center;
+  border-bottom-left-radius: 15px;  border-bottom-right-radius: 15px;
+}
+
+header h1 {
+  font-family: 'Allura', cursive; color: hotpink; font-size: 50px; margin: 10px 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+nav a {
+ text-decoration: none;  color: hotpink;  margin: 0 15px;  font-weight: bold;  font-size: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.music-player audio {
+  margin-top: 10px;
+  width: 250px;
+}
+
+
+main {
+  max-width: 1200px;  margin: 20px auto;  padding: 0 12px;
+}
+
+.masonry {
+  column-count: 4; 
+  column-gap: 12px; 
+}
+
+@media (max-width: 1200px) {
+  .masonry { column-count: 3; }
+}
+@media (max-width: 900px) {
+  .masonry { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .masonry { column-count: 1; }
+}
+
+.masonry-item {
+  break-inside: avoid;  margin-bottom: 12px;  border-radius: 8px;  overflow: hidden;
+  background: #f7f7f7;  transition: transform 0.3s;
+}
+
+.masonry-item:hover {
+  transform: scale(1.02);
+}
+
+.masonry-item img,
+.masonry-item video {
+  width: 100%;  display: block; border-radius: 8px;  object-fit: cover;
+}
+
+
+footer {
+  background-color: #ffe4e1;  text-align: center;  padding: 25px 0;  margin-top: 30px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-footer {
+  margin-top: 10px;  display: flex; justify-content: center;  gap: 20px;
+}
+
+footer .social-footer a img {
+  width: 35px;  height: 35px;  object-fit: cover;  border-radius: 50%;  transition: 0.3s;
+}
+
+footer .social-footer a img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 Welcome to My Website 🌸</h1>
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="audio/sempurna.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <nav>
+     <a href="homes.html">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="work_exprience.html">Experience</a>
+    <a href="consert.html">Concert</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="my_song.html">Song</a>
+  </nav>
+</header>
+
+<main>
+  <h1 style="text-align:center; padding: 24px;">My Memories</h1>
+  <div class="masonry">
+    <div class="masonry-item">
+      <img src="gambar/WhatsApp Image 2026-01-03 at 8.25.58 PM.jpeg" alt="">
+    </div>
+    <div class="masonry-item">
+      <video controls>
+        <source src="gambar/WhatsApp Video 2026-01-03 at 8.36.50 PM.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+    <div class="masonry-item">
+      <img src="gambar/WhatsApp Image 2026-01-03 at 8.36.58 PM.jpeg" alt="">
+    </div>
+    <div class="masonry-item">
+    <video controls>
+      <source src="gambar/WhatsApp Video 2026-01-03 at 8.26.26 PM.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.36.53 PM (3).jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.01 PM (2).jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.29 PM.jpeg" alt="">
+  </div>
+
+   <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.19 PM (1).jpeg" alt="">
+  </div>
+
+  
+   <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.20 PM (1).jpeg" alt="">
+  </div>
+
+   <div class="masonry-item">
+    <video controls>
+      <source src="gambar/WhatsApp Video 2026-01-03 at 8.26.07 PM.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+   <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.02 PM (1).jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.01 PM (1).jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/raya fam.jpeg" alt="">
+  </div>
+
+<div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.26.27 PM (1).jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <video controls>
+      <source src="gambar/WhatsApp Video 2026-01-03 at 8.26.04 PM.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+<div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.36.52 PM.jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.25.59 PM (1).jpeg" alt="">
+  </div>
+  <div class="masonry-item">
+    <video controls>
+      <source src="gambar/WhatsApp Video 2026-01-03 at 8.26.17 PM.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+  <div class="masonry-item">
+    <img src="gambar/fam.jpeg" alt="">
+  </div>
+  
+   <div class="masonry-item">
+    <img src="gambar/class.jpeg" alt="">
+  </div>
+
+   <div class="masonry-item">
+    <video controls>
+      <source src="gambar/WhatsApp Video 2026-01-03 at 8.36.56 PM.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+  
+   <div class="masonry-item">
+    <img src="gambar/WhatsApp Image 2026-01-03 at 8.36.57 PM.jpeg" alt="">
+  </div>
+
+  <div class="masonry-item">
+    <video controls>
+      <source src="gambar/IMG_0668.MP4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+   
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 | Designed by <span style="color:black;">Farah Batrisyia</span> 🤍</p>
+   <div class="social-footer">
+    <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+      <img src="gambar/tiktok.jpg" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+      <img src="gambar/insta.jpg" alt="Instagram">
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&to=frhbtrisya27@gmail.com&su=Hello%20Farah&body=Hi%20Farah" target="_blank" title="Email">
+      <img src="gambar/email.jpg" alt="Email">
+    </a>
+  </div>
+</footer>
+</body>
+</html>
